@@ -1,23 +1,26 @@
-
+a:link {text-decoration: none; color: var(--colorH3)}
+a:visited {text-decoration: none;}
 
 :root{
-     --colorBaseOscuro: #649a9a /*verde oscuro 
+     --colorFondoPrincipal:  #FAFAFA    ; /* #182540
+     verde oscuro:#649a9a
+     Azul: #2849A8
+     naranja:#F45D39
      background-color: #1A2E52*/
-
+     --borderBoxes: #182540; 
+     --colorH3: #000;
 }
 
-
+/*Ajustes de video y nav responsive*/
 body{
     margin-top:55px;
-    background-color: #fff;
+    background-color: var(--colorFondoPrincipal);
 }
 
 .row {
      display: flex;
      width: 100%;
-   }
-
-   
+}
 
 .holaGerardo {
      position: absolute;
@@ -25,10 +28,9 @@ body{
      left: 11%;
      color: #FAFAFA;
      filter: drop-shadow(5px 5px 5px #000);
-
 }
 
-   
+  
    .header {
      height: 100vh;
      display: flex;
@@ -82,27 +84,95 @@ h1{
      color: #FAFAFA;
      font-size: 35px;
      filter: drop-shadow(3px 3px 3px #000);
-
 }
+
 
 
 #photoMe {
      width: 100%;
      display: block;
      margin: auto;
+     border: 2px solid var(--borderBoxes);
+}
+
+h3{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px; 
+  color: var(--colorH3);
+  filter: drop-shadow(2px 2px 2px #000);
 }
 
 h4{
      position: relative;
      left: 30%;
-
 }
 
+h5, h6, p, i, .accordion-header {
+  color: var(--colorH3);
+  filter: drop-shadow(.7px .7px .7px #000);
+}
+
+
+
 #aboutMe{
-     border: 1px solid #000;
+     border: 1px solid var(--borderBoxes);
      padding-left: 15px;
      padding-right: 15px;
+     border-radius: 3px;
      }
 
+#contact{
+ width: 100 px;
+ display:block;
+ align-items: center;
+}
 
+
+
+.collapsed, .accordion-body {
+  background-color: ;
+  }
+
+  .accordion-button {
+    color: var(--colorH3);
+    
+  }
+
+  .accordion-button p{
+   color: var(--colorFondoPrincipal)
+  }
+
+  /*Experiencia laboral*/
+
+  #expLaboral, #expOthers{
+    border: 1px solid var(--borderBoxes);
+    border-radius:5px;
+    padding: 50px;
+ 
+  }
+
+
+
+ .imgMunicipio  {
+    height: 160px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto; 
+    padding-bottom: 50px;
+  }
+
+  .imgUTN  {
+    height: 120px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto; 
+    padding-bottom: 50px;
+  }
+ .imgPL {
+    height: 180px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto; 
+    padding-bottom: 50px;
+  }
 
