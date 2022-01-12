@@ -1,14 +1,12 @@
-a:link {text-decoration: none; color: var(--colorH3)}
-a:visited {text-decoration: none;}
-
 :root{
-     --colorFondoPrincipal:  #FAFAFA    ; /* #182540
+     --colorFondoPrincipal:  #F0F1F2   ; /* #182540
      verde oscuro:#649a9a
      Azul: #2849A8
      naranja:#F45D39
      background-color: #1A2E52*/
      --borderBoxes: #182540; 
      --colorH3: #000;
+     --backBoxes: #FFF;
 }
 
 /*Ajustes de video y nav responsive*/
@@ -92,14 +90,15 @@ h1{
      width: 100%;
      display: block;
      margin: auto;
-     border: 2px solid var(--borderBoxes);
+     border: 1px solid var(--borderBoxes);
 }
 
 h3{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 2px; 
   color: var(--colorH3);
-  filter: drop-shadow(2px 2px 2px #000);
+  filter: drop-shadow(1.5px 1.5px 1.5px #000);
+  padding:50px;
 }
 
 h4{
@@ -107,19 +106,32 @@ h4{
      left: 30%;
 }
 
-h5, h6, p, i, .accordion-header {
+h5, h6, .accordion-header {
   color: var(--colorH3);
-  filter: drop-shadow(.7px .7px .7px #000);
+  filter: drop-shadow(.5px .5px .5px #000);
 }
 
 
 
-#aboutMe{
-     border: 1px solid var(--borderBoxes);
-     padding-left: 15px;
-     padding-right: 15px;
+#aboutMe{ 
+
+     padding-left: 25px;
+     padding-right: 25px;
      border-radius: 3px;
-     }
+     background-color: var(--backBoxes);
+     text-align: justify;
+    }
+#aboutMe p{
+  color: var(--colorH3);
+  filter: drop-shadow(.5px .5px .5px #000);
+}
+
+
+    @media screen and (min-device-width: 990px){
+  #aboutMe {
+    margin-top: 10%;
+  }
+}
 
 #contact{
  width: 100 px;
@@ -145,12 +157,23 @@ h5, h6, p, i, .accordion-header {
   /*Experiencia laboral*/
 
   #expLaboral, #expOthers{
-    border: 1px solid var(--borderBoxes);
-    border-radius:5px;
-    padding: 50px;
- 
+    padding: 20px;
+    padding-top: 30px;
+    background-color: var(--backBoxes );
+    border-radius:20px;
+
   }
 
+  #expLaboral p{
+    color: var(--colorH3);
+    filter: drop-shadow(.5px .5px .5px #000);
+
+  }
+
+  #expOthers p{
+    color: var(--colorH3);
+    filter: drop-shadow(.5px .5px .5px #000);
+  }
 
 
  .imgMunicipio  {
@@ -176,3 +199,33 @@ h5, h6, p, i, .accordion-header {
     padding-bottom: 50px;
   }
 
+.mx-auto{
+  display: flex;
+  background-color: var(--backBoxes);
+}
+#contact img{
+  height: 80px;
+  padding:10px;
+  display: flex;
+  position: relative;
+  flex: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact{
+  text-decoration: none;
+  padding: 50px;
+  text-align: center;
+  }
+
+footer{
+  background-color: #000;
+}
+footer {
+  text-decoration: none;
+}
+
+#footerText{
+    color:#fff;
+}

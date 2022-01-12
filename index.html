@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
         <a class="nav-link" aria-current="page" href="#AcercaDeMi">About me</a>
-        <a class="nav-link" href="#jobExperience">Job Experience</a>
+        <a class="nav-link" href="#JobExperience">Job Experience</a>
         <a class="nav-link" href="#Proyectos">Projects</a>
         <a class="nav-link" href="#Contacto">Contact</a>
       </div>
@@ -39,7 +39,7 @@
  <!--HOME PRINCIPAL INICIO--> 
   <header class="header content">
     <div class="header-video">
-        <video src="Videos/ocean.mp4" autoplay="" loop="" muted=""></video>
+        <video src="Videos/ocean.mp4"  autoplay loop muted></video>
     </div>
     <div class="header-overlay"></div>
     <div class="header-content">
@@ -140,7 +140,7 @@
 <br>
 <!--EXPERIENCIA LABORAL INICIO-->
 <br >
-<h3 class="text-center" > JOB EXPERIENCE | EXPERIENCIA LABORAL </h3>
+<h3 id="JobExperience" class="text-center" > JOB EXPERIENCE | EXPERIENCIA LABORAL </h3>
 <br>
 <!--CONCEJO MUNICIPAL-->
 <div class="container" id="expLaboral">
@@ -230,8 +230,8 @@
         <br>
         <h5 class="card-title">Repostería Chantilly</h5>
         <p class="card-text">Repostería Chantilly es un negocio familiar dedicado a la pastelería y repostería artesanal. El proyecto consistió en el desarrollo de un catálogo online elaborado en HTML5 y CSS, con imágenes de los productos mediante el sistema flexbox. El catálogo cumple con los estándares de resonsividad y se actualiza de manera acorde a lo requerido por el cliente.</p>
-        <a href="#" class="btn btn-success">Link</a>
-        <a href="#" class="btn btn-success">Repositorio</a>
+        <a href="https://chantilly.netlify.app"class="btn btn-success text-decoration-none" target="_blank">Link</a>
+        <a href="https://github.com/gerardoalegre/Chantilly" class="btn btn-success text-decoration-none" target="_blank" >Repositorio</a>
       </div>
       <div class="card-footer text-muted">
         08/2022
@@ -244,30 +244,33 @@
 <!--CONTACTO INICIO-->
 <div class="container-fluid" id="contactMe">
 <br>
+<hr>
 <h3 class="text-center" id="Contacto">CONTACT | CONTACTO</h3>
-<br>
-<section >
-<div class="container-md">
+
+<section>
+<div class="mx-auto">
 <!--MAIL-->
-  <div class="col-md-4" id="contact">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 m-0">
+  <div class="col" id="contact">
     <img src="./Images/icons/email.png"></img>
-    <p class="lead text-justify">gerardoealegre@gmail.com</p>
+    <a href="mailto:gerardoealegregmail.com" class="lead text-justify text-reset text-decoration-none">gerardoealegre@gmail.com</a>
   </div>
 <!--TELEFONO-->
-  <div class="col-md-4" id="contact">
+  <div class="col" id="contact">
     <img src="./Images/icons/smartphone.png" alt="">
-    <p class="lead text-justify">+54 362 4880477</p>
+    <p class=" lead text-justify">+54 362 4880477</p>
   </div>
 <!--LINKEDIN-->
-  <div class="col-md-4 " id="contact">
+  <div class="col" id="contact">
     <img src="./Images/icons/linkedin.png" alt="">
-   <a href="https://www.linkedin.com/in/gerardoalegre/">in/gerardoalegre</a>
+   <a class="text-reset text-decoration-none lead" target="_blank"  href="https://www.linkedin.com/in/gerardoalegre/">in/gerardoalegre</a>
   </div>
 <!--GITHUB-->
-  <div class="col-md-4" id="contact">
+  <div class="col" id="contact">
     <img src="./Images/icons/github.png" alt="">
-    <a href="https://github.com/gerardoalegre">GitHub</a>
+    <a href="https://github.com/gerardoalegre" class="text-reset text-decoration-none lead" target="_blank">GitHub</a>
   </div>
+</div>
 </div>
 </div>
 </section>
@@ -278,7 +281,7 @@
 
 <footer>
   <br>
-    <h6 class="lead text-center" ><i> © Desarrollado por <a href="https://www.linkedin.com/in/gerardoalegre/">Gerardo Alegre</a> All rigths reserved. </i></h6>
+    <p id="footerText" class="lead text-center .text-white" ><i> © Desarrollado por <a class="text-decoration-none text-reset" href="https://www.linkedin.com/in/gerardoalegre/" target="_blank" >Gerardo Alegre</a> All rigths reserved. </i></p>
   <br>
   </footer>
 
