@@ -29,8 +29,8 @@ body{
   font-size: 50px;
   color: #FAFAFA;
   filter: drop-shadow(5px 5px 5px #000);
-  text-align: left;
 }
+
 
 @media screen and (min-device-width: 768px){
 .holaGerardo{
