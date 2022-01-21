@@ -120,6 +120,7 @@ h4{
 
 h5{
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -128,7 +129,9 @@ h5, h6, .accordion-header {
   filter: drop-shadow(.5px .5px .5px #000);
 }
 
-
+hr{
+  border: 0.1px solid var(--borderBoxes);
+}
 
 
 #aboutMe{ 
