@@ -32,6 +32,12 @@ body{
   filter: drop-shadow(5px 5px 5px #000);
 }
 
+#buttonCV a{
+  text-decoration:none;
+  decoration: none;
+  color:#FFF;
+}
+
 
 @media screen and (min-device-width: 768px){
 .holaGerardo{
